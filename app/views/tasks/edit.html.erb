@@ -1,0 +1,11 @@
+<%= link_to "Back to tasks", tasks_path %>
+<h1 class="text-bold">Edit task</h1>
+<%= form_with(model: @task) do |form| %>
+  <%= form.label :title %><br/>
+  <%= form.text_field :title %><br/>
+
+  <%= form.label :details %><br/>
+  <%= form.text_field :details %><br/>
+
+  <%= form.submit %>
+<% end %>
